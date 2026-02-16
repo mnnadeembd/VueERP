@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>dashboard</h5>
+    <h5>Equipment</h5>
   </div>
 </template>
 

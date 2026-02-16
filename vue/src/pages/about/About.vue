@@ -52,12 +52,14 @@
         <router-link to="/products" class="btn btn-light text-success fw-bold mt-2">Shop Now</router-link>
       </div>
     </section>
+    <FooterSection/>
 
   </div>
 </template>
 
 <script setup>
 import HeaderNavbar from '../../layouts/HeaderNavbar.vue';
+import FooterSection from '../../layouts/FooterSection.vue'
 
 const team = [
   { id: 1, name: "Md. Nuruzzaman", role: "Founder & CEO", image: "https://avatars.githubusercontent.com/u/226237014?v=4" },

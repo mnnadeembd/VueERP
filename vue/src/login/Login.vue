@@ -43,12 +43,14 @@
 
     </div>
   </div>
+  <FooterSection/>
 </template>
 
 <script setup>
 import { reactive, ref } from "vue";
 import { useRouter } from "vue-router";
 import HeaderNavbar from "../layouts/HeaderNavbar.vue";
+import FooterSection from "../layouts/FooterSection.vue";
 // import auth from "../services/auth";
 
 const router = useRouter();

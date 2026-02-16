@@ -1,123 +1,161 @@
 <template>
   <div>
+    <HeaderNavbar/>
 
-    <HeaderNavbar />
-
-    <!-- HERO SECTION -->
-    <section class="contact-hero text-white text-center py-5">
+    <!-- HERO -->
+    <section class="contact-hero text-white text-center">
       <div class="container-fluid px-lg-5 px-3">
-        <h1 class="fw-bold">Contact Us</h1>
-        <p class="lead">We are here to help you. Get in touch with us today!</p>
+        <h1 class="fw-bold">যোগাযোগ করুন</h1>
+        <p class="lead">AgroMarket আপনার পাশে — যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
       </div>
     </section>
 
-    <!-- CONTACT INFO & FORM -->
-    <section class="container-fluid py-5 px-lg-5 px-3">
-      <div class="row g-4">
+    <!-- INFO BOX -->
+    <section class="container-fluid px-lg-5 px-3 py-5">
+      <div class="row text-center g-4">
 
-        <!-- Contact Info -->
-        <div class="col-md-4">
-          <div class="contact-info p-4 shadow-sm rounded bg-light">
-            <h4 class="text-success mb-3">Get in Touch</h4>
-            <p>📍 Dhaka, Bangladesh</p>
-            <p>📞 +880123456789</p>
-            <p>✉️ info@agromarket.com</p>
-            <h5 class="mt-3 text-success">Follow Us</h5>
-            <p>
-              <a href="#" class="text-success me-2">Facebook</a>
-              <a href="#" class="text-success me-2">Twitter</a>
-              <a href="#" class="text-success">LinkedIn</a>
-            </p>
+        <div class="col-md-3">
+          <div class="info-box shadow-sm">
+            📍
+            <h6>ঠিকানা</h6>
+            <p>Dhaka, Bangladesh</p>
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="col-md-8">
-          <div class="contact-form p-4 shadow-sm rounded bg-white">
-            <h4 class="text-success mb-3">Send a Message</h4>
+        <div class="col-md-3">
+          <div class="info-box shadow-sm">
+            📞
+            <h6>ফোন</h6>
+            <p>+880 1234 567 890</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-box shadow-sm">
+            ✉️
+            <h6>ইমেইল</h6>
+            <p>support@agromarket.com</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-box shadow-sm">
+            ⏰
+            <h6>সাপোর্ট সময়</h6>
+            <p>24/7 Support</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORM + MAP -->
+    <section class="container-fluid px-lg-5 px-3 pb-5">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- FORM -->
+        <div class="col-lg-6">
+          <div class="contact-form shadow-sm h-100">
+            <h4 class="text-success mb-3">মেসেজ পাঠান</h4>
+
             <form @submit.prevent="submitForm">
-              <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" v-model="form.name" class="form-control" placeholder="Your Name" />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" v-model="form.email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea v-model="form.message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-              </div>
-              <button class="btn btn-success">Send Message</button>
+              <input v-model="form.name" class="form-control mb-3" placeholder="নাম">
+              <input v-model="form.email" class="form-control mb-3" placeholder="ইমেইল">
+              <input v-model="form.phone" class="form-control mb-3" placeholder="মোবাইল">
+              <textarea v-model="form.message" class="form-control mb-3" rows="4" placeholder="আপনার বার্তা"></textarea>
+              <button class="btn btn-success w-100">Send Message</button>
             </form>
-            <div v-if="success" class="text-success mt-3">{{ success }}</div>
+
+            <div v-if="success" class="text-success mt-3">
+              {{ success }}
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="col-lg-6">
+          <div class="map-wrapper shadow-sm h-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1524.14042660888!2d90.3726966807797!3d23.739161488471282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1771267784802!5m2!1sen!2sbd"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              loading="lazy">
+            </iframe>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- MAP PLACEHOLDER -->
-    <section class="map-section container-fluid px-lg-5 px-3 mb-5">
-      <div class="map-placeholder rounded shadow-sm" >
-        <!-- You can embed Google Map iframe here -->
-        <p class="text-center py-5 text-success">[Map Placeholder]</p>
+    <!-- TRUST -->
+    <section class="trust-section text-center">
+      <div class="container-fluid px-lg-5 px-3">
+        <h3 class="fw-bold mb-4">কেন AgroMarket?</h3>
+        <div class="row g-4">
+          <div class="col-md-3">🚚<p>দ্রুত ডেলিভারি</p></div>
+          <div class="col-md-3">✅<p>মানসম্মত পণ্য</p></div>
+          <div class="col-md-3">💳<p>সহজ পেমেন্ট</p></div>
+          <div class="col-md-3">☎️<p>২৪/৭ সহায়তা</p></div>
+        </div>
       </div>
     </section>
 
+    <FooterSection/>
   </div>
 </template>
 
 <script setup>
 import { reactive, ref } from "vue";
 import HeaderNavbar from "../../layouts/HeaderNavbar.vue";
+import FooterSection from "../../layouts/FooterSection.vue";
 
 const form = reactive({
   name: "",
   email: "",
+  phone: "",
   message: ""
 });
 
 const success = ref("");
 
 const submitForm = () => {
-  // Temporary: just show success
-  success.value = "Thank you! Your message has been sent.";
-  // Reset form
-  form.name = "";
-  form.email = "";
-  form.message = "";
+  success.value = "ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে।";
+  form.name = form.email = form.phone = form.message = "";
 };
 </script>
 
 <style scoped>
-/* HERO SECTION */
 .contact-hero {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, #16a34a, #22c55e);
   padding: 100px 0;
 }
 
-/* CONTACT FORM & INFO */
-.contact-form input,
-.contact-form textarea {
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  padding: 12px;
-  outline: none;
+.info-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  transition: 0.3s;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #16a34a;
-  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.15);
+.info-box:hover {
+  transform: translateY(-6px);
 }
 
-/* MAP PLACEHOLDER */
-.map-placeholder {
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.map-wrapper {
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.trust-section {
   background: #dcfce7;
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 60px 0;
 }
 </style>

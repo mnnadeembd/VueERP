@@ -5,6 +5,7 @@ import About from "../pages/about/About.vue";
 import Contact from "../pages/contact/Contact.vue";
 import Dashboard from "../pages/dashboard/Dashboard.vue";
 import Main from "../layouts/Main.vue";
+import Blog from "../pages/blog/Blog.vue";
 
 const routes = [
   // Dashboard + Main layout nested
@@ -25,6 +26,7 @@ const routes = [
   { path: "/login", name: "Login", component: Login },
   { path: "/about", name: "About", component: About },
   { path: "/contact", name: "Contact", component: Contact },
+  {path: '/blog', name: "Blog", component: Blog},
 
   // Catch-all 404
   { path: "/:pathMatch(.*)*", redirect: "/" },
