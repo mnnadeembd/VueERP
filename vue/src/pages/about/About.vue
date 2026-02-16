@@ -14,7 +14,7 @@
     <section class="container-fluid py-5 px-lg-5 px-3">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4">
-          <img src="https://placeimg.com/500/400/nature" alt="Mission" class="img-fluid rounded shadow-sm">
+          <img src="https://media.gettyimages.com/id/1306713348/photo/drone-in-soybean-crop.jpg?s=612x612&w=gi&k=20&c=KrkYaucI1NAdgUjvQVC6DUImPl2RhzzyA4mGDcWlZcc=" alt="Mission" class="img-fluid rounded shadow-sm">
         </div>
         <div class="col-md-6">
           <h3>Our Mission</h3>
@@ -60,9 +60,9 @@
 import HeaderNavbar from '../../layouts/HeaderNavbar.vue';
 
 const team = [
-  { id: 1, name: "Md. Nuruzzaman", role: "Founder & CEO", image: "https://placeimg.com/200/200/people" },
-  { id: 2, name: "Md. Rashedul Islam", role: "CTO", image: "https://placeimg.com/201/201/people" },
-  { id: 3, name: "Fatima Rahman", role: "Marketing Head", image: "https://placeimg.com/202/202/people" },
+  { id: 1, name: "Md. Nuruzzaman", role: "Founder & CEO", image: "https://avatars.githubusercontent.com/u/226237014?v=4" },
+  { id: 2, name: "Md. Rashedul", role: "CTO", image: "https://img.freepik.com/free-photo/portrait-optimistic-businessman-formalwear_1262-3600.jpg?semt=ais_user_personalization&w=740&q=80" },
+  { id: 3, name: "Fatima Rahman", role: "Marketing Head", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoC3u6I4Lmw-d421xIgZZxCGwhE4iMhBy99g&s" },
 ]
 </script>
 
