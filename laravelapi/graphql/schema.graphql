@@ -1,0 +1,13 @@
+type Customer{
+id: ID
+name: String
+email: String
+phone: String
+address: String
+}
+
+type Query{
+customers: [Customer]! @all
+customer(id: ID! @eq): Customer @find
+
+}

@@ -4,7 +4,7 @@
       <!-- Body main section starts -->
       <main class="w-100 p-0">
         <!-- Login to your Account start -->
-        <div class="container-fluid">
+        <div class="container">
              <router-view/>
         </div>
         <!-- Login to your Account end -->

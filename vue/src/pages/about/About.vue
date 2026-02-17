@@ -4,14 +4,14 @@
 
     <!-- HERO SECTION -->
     <section class="about-hero text-white text-center py-5">
-      <div class="container-fluid px-lg-5 px-3">
+      <div class="container">
         <h1 class="fw-bold">About AgroMarket</h1>
         <p class="lead">Connecting farmers with quality products for better harvests.</p>
       </div>
     </section>
 
     <!-- MISSION & VISION -->
-    <section class="container-fluid py-5 px-lg-5 px-3">
+    <section class="container py-5">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4">
           <img src="https://media.gettyimages.com/id/1306713348/photo/drone-in-soybean-crop.jpg?s=612x612&w=gi&k=20&c=KrkYaucI1NAdgUjvQVC6DUImPl2RhzzyA4mGDcWlZcc=" alt="Mission" class="img-fluid rounded shadow-sm">
@@ -28,7 +28,7 @@
 
     <!-- TEAM / FOUNDERS -->
     <section class="bg-light py-5">
-      <div class="container-fluid px-lg-5 px-3 text-center">
+      <div class="container text-center">
         <h3 class="mb-4">Meet Our Team</h3>
         <div class="row g-4 justify-content-center">
           <div class="col-md-3" v-for="member in team" :key="member.id">
@@ -46,7 +46,7 @@
 
     <!-- CONTACT / CTA -->
     <section class="about-cta text-center py-5 text-white">
-      <div class="container-fluid px-lg-5 px-3">
+      <div class="container">
         <h3>Ready to grow your farm?</h3>
         <p>Explore our products and start shopping today!</p>
         <router-link to="/products" class="btn btn-light text-success fw-bold mt-2">Shop Now</router-link>
@@ -63,7 +63,7 @@ import FooterSection from '../../layouts/FooterSection.vue'
 
 const team = [
   { id: 1, name: "Md. Nuruzzaman", role: "Founder & CEO", image: "https://avatars.githubusercontent.com/u/226237014?v=4" },
-  { id: 2, name: "Md. Rashedul", role: "CTO", image: "https://img.freepik.com/free-photo/portrait-optimistic-businessman-formalwear_1262-3600.jpg?semt=ais_user_personalization&w=740&q=80" },
+  { id: 2, name: "Md. Rashedul", role: "CTO", image: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/332726428_1305799983311266_3683236146766913777_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=6PElLIcY9pgQ7kNvwEZEGrT&_nc_oc=AdkHOQpgQIXKIbvzq3ZvNG_8NxBjDjPYjr3mYJHfWree-5WVg0cQ2lbQcUpmsoZtRzo&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=VWUEKgAbJjgoeKzifGbiPA&oh=00_AfttlGDZOsI68p51CxrB2u_xWSIdsQe8f3APQgzusgGfNg&oe=6999AE36" },
   { id: 3, name: "Fatima Rahman", role: "Marketing Head", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoC3u6I4Lmw-d421xIgZZxCGwhE4iMhBy99g&s" },
 ]
 </script>

@@ -4,14 +4,14 @@
 
     <!-- HERO SECTION -->
     <section class="blog-hero text-white text-center py-5">
-      <div class="container-fluid px-lg-5 px-3">
+      <div class="container">
         <h1 class="fw-bold">AgroMarket Blog</h1>
         <p class="lead">কৃষি টিপস, প্রযুক্তি ও বাজার তথ্য</p>
       </div>
     </section>
 
     <!-- BLOG POSTS -->
-    <section class="container-fluid py-5 px-lg-5 px-3">
+    <section class="container py-5">
       <div class="row g-4">
 
         <div class="col-md-4" v-for="post in posts" :key="post.id">

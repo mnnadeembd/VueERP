@@ -4,14 +4,14 @@
 
     <!-- HERO -->
     <section class="contact-hero text-white text-center">
-      <div class="container-fluid px-lg-5 px-3">
+      <div class="container">
         <h1 class="fw-bold">যোগাযোগ করুন</h1>
         <p class="lead">AgroMarket আপনার পাশে — যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
       </div>
     </section>
 
     <!-- INFO BOX -->
-    <section class="container-fluid px-lg-5 px-3 py-5">
+    <section class="container py-5">
       <div class="row text-center g-4">
 
         <div class="col-md-3">
@@ -50,7 +50,7 @@
     </section>
 
     <!-- FORM + MAP -->
-    <section class="container-fluid px-lg-5 px-3 pb-5">
+    <section class="container pb-5">
       <div class="row g-4 align-items-stretch">
 
         <!-- FORM -->
@@ -90,7 +90,7 @@
 
     <!-- TRUST -->
     <section class="trust-section text-center">
-      <div class="container-fluid px-lg-5 px-3">
+      <div class="container">
         <h3 class="fw-bold mb-4">কেন AgroMarket?</h3>
         <div class="row g-4">
           <div class="col-md-3">🚚<p>দ্রুত ডেলিভারি</p></div>
@@ -128,7 +128,7 @@ const submitForm = () => {
 <style scoped>
 .contact-hero {
   background: linear-gradient(135deg, #16a34a, #22c55e);
-  padding: 100px 0;
+  padding: 100px 0 !important;
 }
 
 .info-box {

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container-fluid px-lg-5 px-3">
+    <div class="container">
 
       <!-- Logo -->
       <router-link class="navbar-brand fw-bold text-success" to="/">
