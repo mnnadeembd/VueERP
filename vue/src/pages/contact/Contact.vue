@@ -3,21 +3,21 @@
     <HeaderNavbar/>
 
     <!-- HERO -->
-    <section class="contact-hero text-white text-center">
+    <section class="contact-hero bg-success text-white text-center">
       <div class="container">
-        <h1 class="fw-bold">যোগাযোগ করুন</h1>
-        <p class="lead">AgroMarket আপনার পাশে — যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
+        <h1 class="fw-bold">You may contact us at any time</h1>
+        <p class="lead">AgroMart  —  are always here to assist you with any of your needs.</p>
       </div>
     </section>
 
     <!-- INFO BOX -->
-    <section class="container py-5">
+    <section class="container-fluid py-5">
       <div class="row text-center g-4">
 
         <div class="col-md-3">
           <div class="info-box shadow-sm">
             📍
-            <h6>ঠিকানা</h6>
+            <h6>Address</h6>
             <p>Dhaka, Bangladesh</p>
           </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="col-md-3">
           <div class="info-box shadow-sm">
             📞
-            <h6>ফোন</h6>
+            <h6>Phone</h6>
             <p>+880 1234 567 890</p>
           </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="col-md-3">
           <div class="info-box shadow-sm">
             ✉️
-            <h6>ইমেইল</h6>
+            <h6>Email</h6>
             <p>support@agromarket.com</p>
           </div>
         </div>
@@ -41,7 +41,7 @@
         <div class="col-md-3">
           <div class="info-box shadow-sm">
             ⏰
-            <h6>সাপোর্ট সময়</h6>
+            <h6>Support Time</h6>
             <p>24/7 Support</p>
           </div>
         </div>
@@ -56,13 +56,13 @@
         <!-- FORM -->
         <div class="col-lg-6">
           <div class="contact-form shadow-sm h-100">
-            <h4 class="text-success mb-3">মেসেজ পাঠান</h4>
+            <h4 class="text-success mb-3">Send Message</h4>
 
             <form @submit.prevent="submitForm">
-              <input v-model="form.name" class="form-control mb-3" placeholder="নাম">
-              <input v-model="form.email" class="form-control mb-3" placeholder="ইমেইল">
-              <input v-model="form.phone" class="form-control mb-3" placeholder="মোবাইল">
-              <textarea v-model="form.message" class="form-control mb-3" rows="4" placeholder="আপনার বার্তা"></textarea>
+              <input v-model="form.name" class="form-control mb-3" placeholder="Name">
+              <input v-model="form.email" class="form-control mb-3" placeholder="Email">
+              <input v-model="form.phone" class="form-control mb-3" placeholder="Phone">
+              <textarea v-model="form.message" class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
               <button class="btn btn-success w-100">Send Message</button>
             </form>
 
@@ -90,16 +90,29 @@
 
     <!-- TRUST -->
     <section class="trust-section text-center">
-      <div class="container">
-        <h3 class="fw-bold mb-4">কেন AgroMarket?</h3>
-        <div class="row g-4">
-          <div class="col-md-3">🚚<p>দ্রুত ডেলিভারি</p></div>
-          <div class="col-md-3">✅<p>মানসম্মত পণ্য</p></div>
-          <div class="col-md-3">💳<p>সহজ পেমেন্ট</p></div>
-          <div class="col-md-3">☎️<p>২৪/৭ সহায়তা</p></div>
+      <div class="container overflow-hidden">
+        <h3 class="fw-bold mb-4">Why should you choose us?</h3>
+
+        <div class="scroll-wrapper">
+          <div class="scroll-content">
+            <div class="trust-item">🚚 <span>Fast Delivery</span></div>
+            <div class="trust-item">✅ <span>Quality Products</span></div>
+            <div class="trust-item">🛠️ <span>Advanced Machinery</span></div>
+            <div class="trust-item">💳 <span>Easy Payment</span></div>
+            <div class="trust-item">☎️ <span>24/7 Support</span></div>
+
+            <!-- Duplicate for smooth infinite scroll -->
+            <div class="trust-item">🚚 <span>Fast Delivery</span></div>
+            <div class="trust-item">✅ <span>Quality Products</span></div>
+            <div class="trust-item">🛠️ <span>Advanced Machinery</span></div>
+            <div class="trust-item">💳 <span>Easy Payment</span></div>
+            <div class="trust-item">☎️ <span>24/7 Support</span></div>
+          </div>
         </div>
+
       </div>
     </section>
+
 
     <FooterSection/>
   </div>
@@ -120,15 +133,14 @@ const form = reactive({
 const success = ref("");
 
 const submitForm = () => {
-  success.value = "ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে।";
+  success.value = "Thank you! Your message has been sent.";
   form.name = form.email = form.phone = form.message = "";
 };
 </script>
 
 <style scoped>
 .contact-hero {
-  background: linear-gradient(135deg, #16a34a, #22c55e);
-  padding: 100px 0 !important;
+  padding: 100px 0 ;
 }
 
 .info-box {
@@ -158,4 +170,38 @@ const submitForm = () => {
   background: #dcfce7;
   padding: 60px 0;
 }
+
+.scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 60px;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.trust-item span {
+  margin-left: 8px;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 </style>

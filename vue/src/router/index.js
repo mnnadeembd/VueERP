@@ -9,6 +9,11 @@ import Blog from "../pages/blog/Blog.vue";
 import CustomerList from "../pages/customer/CustomerList.vue";
 import CustomerEdit from "../pages/customer/CustomerEdit.vue";
 import CustomerCreate from "../pages/customer/CustomerCreate.vue";
+import ProductList from "../pages/products/ProductList.vue";
+import Fertilizer from "../pages/products/Fertilizer.vue";
+import Seed from "../pages/products/Seed.vue";
+import Pesticide from "../pages/products/Pesticide.vue";
+import Equipment from "../pages/products/Equipment.vue";
 
 const routes = [
   // Dashboard + Main layout nested
@@ -31,6 +36,11 @@ const routes = [
   { path: "/about", name: "About", component: About },
   { path: "/contact", name: "Contact", component: Contact },
   {path: '/blog', name: "Blog", component: Blog},
+  {path: "/product", name: "Product", component: ProductList},
+  {path: "/fertilizer", name: "Fertilizer", component: Fertilizer},
+  {path: "/pesticide", name: "Pesticide", component: Pesticide},
+  {path: "/seed", name: "Seed", component: Seed},
+  {path: "/equipment", name: "Equipment", component: Equipment},
 
   // Catch-all 404
   { path: "/:pathMatch(.*)*", redirect: "/" },

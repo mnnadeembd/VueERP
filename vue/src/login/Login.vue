@@ -76,7 +76,7 @@ const submit = async () => {
 <style scoped>
 /* 🌱 Background */
 .login-wrapper {
-  background: linear-gradient(135deg, #22c55e, #16a34a, #4ade80);
+  background: linear-gradient(135deg, #b0f7ca, #b8f8cf, #e8ffe6);
   display: flex;
   align-items: center;
   justify-content: center;

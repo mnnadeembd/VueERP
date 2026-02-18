@@ -3,9 +3,9 @@
     <header-navbar/>
 
     <!-- HERO SECTION -->
-    <section class="about-hero text-white text-center py-5">
+    <section class="about-hero bg-success text-white text-center py-5">
       <div class="container">
-        <h1 class="fw-bold">About AgroMarket</h1>
+        <h1 class="fw-bold">About AgroMart</h1>
         <p class="lead">Connecting farmers with quality products for better harvests.</p>
       </div>
     </section>
@@ -71,7 +71,6 @@ const team = [
 <style scoped>
 /* HERO SECTION */
 .about-hero {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
   padding: 100px 0;
 }
 

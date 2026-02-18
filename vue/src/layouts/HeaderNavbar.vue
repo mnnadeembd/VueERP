@@ -4,7 +4,7 @@
 
       <!-- Logo -->
       <router-link class="navbar-brand fw-bold text-success" to="/">
-        AgroMarket
+        AgroMart
       </router-link>
 
       <!-- Mobile Toggle -->
@@ -13,6 +13,9 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,17 +28,22 @@
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
 
-          <!-- Products -->
+          <!-- Products Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            <a 
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Products
             </a>
 
             <ul class="dropdown-menu">
-              <li><router-link class="dropdown-item" to="/products/seeds">🌱 বীজ</router-link></li>
-              <li><router-link class="dropdown-item" to="/products/fertilizer">🧪 সার</router-link></li>
-              <li><router-link class="dropdown-item" to="/products/pesticide">🐛 কীটনাশক</router-link></li>
-              <li><router-link class="dropdown-item" to="/products/machinery">🚜 কৃষি যন্ত্রপাতি</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/seeds">🌱 Seed</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/fertilizer">🌿 Bio Fertilizer</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/pesticide">🐛 Pesticide</router-link></li>
+              <li><router-link class="dropdown-item" to="/products/machinery">🚜 Agricultural Machinery</router-link></li>
               <li><hr class="dropdown-divider"></li>
               <li><router-link class="dropdown-item text-success fw-bold" to="/products">View All</router-link></li>
             </ul>

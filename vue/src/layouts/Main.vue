@@ -28,7 +28,7 @@ import Navbar from './Navbar.vue';
 <style scoped>
 .app-layout {
   display: flex;
-  min-height: calc(100vh - 120px); /* header + footer space */
+  min-height: calc(100vh - 120px);
   background: #f1f5f9;
 }
 

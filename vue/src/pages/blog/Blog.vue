@@ -3,10 +3,10 @@
     <HeaderNavbar/>
 
     <!-- HERO SECTION -->
-    <section class="blog-hero text-white text-center py-5">
+    <section class="blog-hero bg-success text-white text-center py-5">
       <div class="container">
-        <h1 class="fw-bold">AgroMarket Blog</h1>
-        <p class="lead">কৃষি টিপস, প্রযুক্তি ও বাজার তথ্য</p>
+        <h1 class="fw-bold">AgroMart Blog</h1>
+        <p class="lead">Tips, Technology & Market Information</p>
       </div>
     </section>
 
@@ -45,50 +45,49 @@ const posts = ref([
     title: "ধান চাষের আধুনিক পদ্ধতি",
     date: "12 Feb 2026",
     excerpt: "উচ্চ ফলন পেতে আধুনিক পদ্ধতিতে ধান চাষের গুরুত্বপূর্ণ ধাপগুলো জানুন...",
-    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9"
+    image: "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2023/10/24/lalmonirhat_char_farmers-01.jpg"
   },
   {
     id: 2,
     title: "শীতকালীন সবজি চাষের সম্পূর্ণ গাইড",
     date: "05 Feb 2026",
     excerpt: "শীতকালে কোন সবজি চাষে লাভ বেশি এবং কীভাবে পরিচর্যা করবেন...",
-    image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+    image: "https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2026/01/21/img_2976.jpg"
   },
   {
     id: 3,
     title: "কীটনাশক ব্যবহারে নিরাপত্তা নির্দেশনা",
     date: "28 Jan 2026",
     excerpt: "সঠিকভাবে কীটনাশক ব্যবহার না করলে ফসল ও মানুষের ক্ষতি হতে পারে...",
-    image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3"
+    image: "https://www.thedailystar.net/sites/default/files/styles/big_1/public/images/2025/11/17/gap_crop.jpg?h=86b7073e"
   },
   {
     id: 4,
     title: "জৈব সার ব্যবহারের উপকারিতা",
     date: "18 Jan 2026",
     excerpt: "মাটির উর্বরতা বৃদ্ধি ও স্বাস্থ্যকর ফসল উৎপাদনে জৈব সার অত্যন্ত কার্যকর...",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+    image: "https://www.fao.org/images/rlclibraries/news/dis-1-11.jpg?sfvrsn=82e241b_2"
   },
   {
     id: 5,
     title: "ড্রিপ সেচ প্রযুক্তি কী এবং কেন প্রয়োজন?",
     date: "10 Jan 2026",
     excerpt: "কম পানিতে বেশি ফলনের জন্য ড্রিপ সেচ প্রযুক্তি অত্যন্ত কার্যকর...",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxB6QX6aJqWq53ZceZBEb7uDlN_oEqlATubqx7RFO&s"
   },
   {
     id: 6,
     title: "বীজ নির্বাচন করার সঠিক পদ্ধতি",
     date: "02 Jan 2026",
     excerpt: "উন্নত মানের বীজ নির্বাচন করলে ফলন বৃদ্ধি পায় এবং রোগ প্রতিরোধ ক্ষমতা বাড়ে...",
-    image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjLyjHIFqwTOiLREP8an6d75M80iiqKJzrQ&s"
   }
 ]);
 </script>
 
 <style scoped>
 .blog-hero {
-  background: linear-gradient(135deg, #16a34a, #22c55e);
-  padding: 90px 0;
+  padding: 100px 0;
 }
 
 .blog-card img {
