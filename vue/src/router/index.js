@@ -6,6 +6,9 @@ import Contact from "../pages/contact/Contact.vue";
 import Dashboard from "../pages/dashboard/Dashboard.vue";
 import Main from "../layouts/Main.vue";
 import Blog from "../pages/blog/Blog.vue";
+import CustomerList from "../pages/customer/CustomerList.vue";
+import CustomerEdit from "../pages/customer/CustomerEdit.vue";
+import CustomerCreate from "../pages/customer/CustomerCreate.vue";
 
 const routes = [
   // Dashboard + Main layout nested
@@ -13,11 +16,12 @@ const routes = [
     path: "/dashboard",
     component: Main,
     children: [
-      {
-        path: "", // empty = /dashboard
-        name: "Dashboard",
-        component: Dashboard,
-      },
+      {path: "",  name: "Dashboard",  component: Dashboard  },
+      {path: "/dashboard/customer", name: "CustomerList", component: CustomerList},
+      {path: "/dashboard/customer/:id", name: "CustomerEdit", component: CustomerEdit},
+      {path: "/dashboard/customer/create", name: "CustomerCreate", component: CustomerCreate},
+
+
     ],
   },
 
