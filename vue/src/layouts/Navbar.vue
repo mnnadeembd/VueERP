@@ -7,7 +7,7 @@
 
       <ul class="nav nav-pills flex-column gap-2">
         <li class="nav-item">
-          <router-link to="/" class="nav-link text-white" active-class="active">
+          <router-link to="/dashboard" class="nav-link text-white" active-class="active">
             🏠 Dashboard
           </router-link>
         </li>
@@ -24,7 +24,7 @@
                 <router-link to="/role" class="nav-link text-white" active-class="active">Roles</router-link>
               </li>
               <li>
-                <router-link to="/customer" class="nav-link text-white" active-class="active">Customer</router-link>
+                <router-link to="/dashboard/customer" class="nav-link text-white" active-class="active">Customer</router-link>
               </li>
               <li>
                 <router-link to="/basic" class="nav-link text-white" active-class="active">Basic Content</router-link>

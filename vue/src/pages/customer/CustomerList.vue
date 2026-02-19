@@ -1,21 +1,22 @@
 <template>
 
-  <div class="container-fluid page-container main-body-container">
-      <div class="col-xl-12">
-        <div class="card custom-card">
-          <div class="container mt-4">
+  <div class="container-fluid ">
+    <div class="col-xl-12"> 
+      <div class="card custom-card">
+        <div class="container mt-4">
+          <div class="form">
 
             <input type="text" placeholder="Search Hear" v-model="search">
 
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class='card-title mb-0'>Customer List</h5>
               <button @click="$router.push('/dashboard/customer/create')" class="btn btn-success btn-sm"><i class="ri-add-line me-1"></i>
-                add new customer
+                + new customer
               </button>
             </div>
 
             <div class="table-responsive">
-              <table class="table table-sm mb-0">
+              <table class="table table-sm ">
                 <thead>
                   <tr>
                       <th>ID</th>
@@ -32,9 +33,6 @@
                         <td>{{ customer.email }}</td>
                         <td>{{ customer.phone }}</td>
                         <td>
-                            <!-- <button @click="$router.push(`/customer/edit/${customer.id}`)">Edit</button>
-                            <button @click="cusotmerDelete(customer.id)">Delete</button> -->
-
                             <button  @click="$router.push(`/dashboard/customer/edit/${customer.id}`)"><i class="bi bi-pencil-square"></i></button>
                             <button @click="cusotmerDelete(customer.id)"><i class="bi bi-trash"></i></button>
                         </td>
@@ -42,11 +40,11 @@
                 </tbody>
               </table>
             </div>
-
           </div>
-        </div>
+        </div>       
       </div>
     </div>
+  </div>
 </template>
 
 <script  setup>
@@ -109,6 +107,9 @@ function cusotmerDelete(id){
 
 
 
-<style>
+<style scoped>
 
+.main-body-container, .custom-card, .card-header{
+  width: 100%;
+}
 </style>
